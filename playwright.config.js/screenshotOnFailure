@@ -1,0 +1,11 @@
+const { defineConfig } = require('@playwright/test');
+
+module.exports = defineConfig({
+  globalSetup: require.resolve('./utils/global-setup'), // Run setup first
+  use: {
+    baseURL: 'https://www.saucedemo.com',
+    storageState: 'storageState.json', // Use this state for every test
+    screenshot: 'only-on-failure',
+  },
+  // ... other configs
+});

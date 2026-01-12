@@ -1,0 +1,7 @@
+playwright-sdet-framework/
+├── pages/               # Page Object Models
+├── tests/               # Functional test scripts
+├── data/                # Test data (JSON)
+├── utils/               # Common actions/helpers
+├── playwright.config.js # Global configuration
+└── package.json         # Dependencies and scripts
